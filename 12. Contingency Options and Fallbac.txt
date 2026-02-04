@@ -1,0 +1,113 @@
+12. Contingency Options and Fallback Architectures
+This section outlines the fallback options available in the event that neither the baseline reconfiguration nor the repeater-based alternate proposal can be implemented due to technical, programmatic, or schedule constraints. These options are presented to demonstrate completeness of the trade-space evaluation and to ensure mission continuity under all circumstances.
+________________________________________
+12.1 Reversion to Foreign Ground Station Support
+One fallback option is to retain the original plan of utilizing a foreign ground station to support IDRSS-2 operations during periods when direct communication with the Indian ground station is not feasible.
+Key Characteristics
+•	IDRSS-2 communicates directly with the foreign ground station using its existing Ku-band payload.
+•	Ground-to-GY telecommand capability is preserved through the original GS–IDRSS–GY relay path.
+•	No additional spacecraft or payload modifications are required.
+Limitations
+•	Increased operational and recurring costs associated with foreign ground station usage.
+•	Dependence on external infrastructure and regulatory clearances.
+•	Higher operational complexity due to coordination across international ground segments.
+________________________________________
+12.2 Bidirectional Operation of the Antarctica Ka×Ka Link
+An alternative fallback option is to upgrade the existing Antarctica Ka×Ka link from one-way to bidirectional operation, enabling both forward and return communication through the same relay path.
+Key Characteristics
+•	The existing Ka×Ka payload originally designed for Antarctica data relay is retained.
+•	Forward telecommand capability is added to complement the existing return data link.
+•	Ground station access is restored without introducing additional spacecraft.
+Limitations
+•	Requires modification of the payload operational concept.
+•	Potential need for:
+o	Additional RF chain support
+o	Duplexing or switching mechanisms
+o	Requalification of the modified operational mode
+•	Introduces atmospheric losses and weather sensitivity inherent to Ka-band Earth-space links.
+________________________________________
+12.3 Comparative Assessment of Fallback Options
+Option	Advantages	Limitations
+Foreign ground station	Technically mature, minimal spacecraft changes	High cost, external dependency
+Bidirectional Antarctica link	No new spacecraft, centralized relay	Payload modification, Ka-band atmospheric losses
+
+
+12. Contingency Option Under Unresolvable Constraints
+
+This section outlines the final fallback option in the event that neither of the proposed architectures—namely the baseline reconfiguration (Proposal-1) nor the repeater-based alternate configuration (Proposal-2)—can be implemented due to technical infeasibility or violation of imposed system constraints. The purpose of this section is to clearly define the last operationally viable path to ensure mission continuity.
+
+12.1 Current Status of Ground Segment Usage
+
+It is important to note that:
+
+No foreign ground station is used in either Proposal-1 or Proposal-2.
+
+Both proposals are explicitly designed to eliminate dependency on any foreign ground infrastructure.
+
+The inclusion of this section does not imply adoption of a foreign ground station, but rather defines a fallback if all reconfiguration options fail.
+
+12.2 Limitation of the Proposed Architectures
+
+Under the current constraints:
+
+Proposal-1 (Baseline Reconfiguration)
+
+Successfully eliminates the foreign ground station.
+
+Does not provide a return telecommand link during periods when GY is visible only to IDRSS-2.
+
+Proposal-2 (Repeater-Based Architecture)
+
+Restores two-way communication.
+
+Requires deployment of a dedicated repeater satellite with large Ka-band antennas.
+
+May be deemed ineffective or impractical due to cost, complexity, and payload implications.
+
+If neither proposal can be adopted within acceptable risk, cost, or schedule limits, an alternative approach becomes necessary.
+
+12.3 Bidirectional Antarctica Link as a Theoretical Alternative
+
+An alternative approach is to convert the existing Antarctica Ka×Ka link from one-way to bidirectional operation, thereby enabling forward telecommand capability.
+
+However, this approach:
+
+Requires payload and operational modifications on both IDRSS-1 and IDRSS-2.
+
+Necessitates changes to RF chains, switching logic, and operational modes.
+
+Violates the current design constraint of no modification to IDRSS-1.
+
+Accordingly, this option is not feasible under the present constraints and is not pursued further in this report.
+
+12.4 Final Fallback: Reversion to Foreign Ground Station
+
+If neither:
+
+the baseline reconfiguration (Proposal-1), nor
+
+the repeater-based alternate architecture (Proposal-2)
+
+can be implemented, the only remaining viable option is to revert to the original plan of utilizing a foreign ground station to support IDRSS-2 operations.
+
+In this fallback configuration:
+
+IDRSS-2 communicates directly with the foreign ground station using its existing Ku-band payload.
+
+Full two-way ground-to-GY communication is restored through the conventional GS–IDRSS–GY relay path.
+
+No spacecraft payload modifications are required.
+
+While operationally effective, this option reintroduces:
+
+External dependency,
+
+Higher recurring cost, and
+
+Increased operational complexity,
+
+and is therefore considered a last-resort solution.
+
+12.5 Positioning of the Contingency Option
+
+The reversion to a foreign ground station is not a preferred solution and is included solely to ensure mission continuity if all reconfiguration strategies are rendered infeasible. The baseline proposal remains the primary recommendation, with the repeater-based architecture retained as a technically validated alternate under relaxed constraints.
