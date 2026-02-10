@@ -1,1 +1,9 @@
 In the baseline link design, the GY antenna gain was not treated as a driving parameter and was assumed as a reference receive condition. The link was designed such that adequate signal power density existed at the user location based primarily on IDRSS transmit EIRP and propagation losses. Consequently, repeater antenna sizing derived in this analysis is expressed relative to the reference receive aperture assumed in the baseline link calculation rather than an explicitly defined GY antenna diameter.
+
+Since the GY antenna gain was not explicitly parameterized in the baseline link budget, the effective receive aperture used in the reference link is normalized to an equivalent 1 m antenna diameter for the purpose of expressing repeater antenna scaling in absolute terms.
+
+That resolves everything cleanly.
+
+
+
+
