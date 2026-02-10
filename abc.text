@@ -7,3 +7,39 @@ That resolves everything cleanly.
 
 
 
+Drawback Identified in Proposal-1 (Baseline Reconfiguration)
+Frequency Compatibility and Self-Interference Limitation
+
+Although the RF link analysis demonstrates that sufficient link margin exists for inter-satellite communication between IDRSS-1 and IDRSS-2 at the reduced data rate of 4 Mbps, the baseline proposal encounters a fundamental limitation arising from frequency allocation and payload constraints.
+
+In the proposed configuration:
+
+IDRSS-1 transmits inter-satellite data toward IDRSS-2 using a Ka-band frequency compatible with the receive chain associated with the 2.5 m antenna on IDRSS-2.
+
+IDRSS-2 subsequently forwards the received data to the GY spacecraft using its existing user transmission chain.
+
+However, due to the existing payload configuration:
+
+The transmit frequency available on IDRSS-2 for communication toward GY coincides with the receive frequency used for the inter-satellite link from IDRSS-1.
+
+Since IDRSS-2 employs a single transmit frequency allocation for this chain, simultaneous reception from IDRSS-1 and transmission toward GY occurs within the same frequency band.
+
+This results in:
+
+Potential self-interference between transmit and receive paths,
+
+Increased receiver noise floor due to leakage and insufficient isolation,
+
+Inability to maintain acceptable signal-to-noise ratio during concurrent relay operation.
+
+The limitation does not arise from insufficient antenna gain or transmit power. The received signal strength at IDRSS-2 is adequate due to the gain provided by the 1.5 m antenna and reduced data rate. Instead, the issue originates from the lack of frequency separation between the inter-satellite relay link and the user downlink, which cannot be resolved without modifying the transmit frequency plan of IDRSS-1 or the payload architecture of IDRSS-2.
+
+Since modification of IDRSS-1 is outside the permitted design constraints, this frequency conflict renders Proposal-1 operationally infeasible in its current form.
+
+Revised Conclusion for Proposal-1
+
+The baseline reconfiguration successfully demonstrates that inter-satellite relay between IDRSS-1 and IDRSS-2 is feasible from an RF link budget perspective, with adequate received power achievable using existing antenna configurations and reduced data rates. The analysis confirms that signal propagation and link margin are not limiting factors for the proposed architecture.
+
+However, the practical implementation of the configuration is constrained by frequency compatibility within the existing payload architecture. The inability to provide sufficient separation between receive and transmit frequencies on IDRSS-2 leads to potential self-interference during simultaneous relay operation. As changes to IDRSS-1 frequency allocation or payload configuration are not permitted under the current constraints, the baseline proposal cannot be implemented without violating system limitations.
+
+Nevertheless, the analysis remains valuable in establishing that the primary challenge is architectural rather than RF performance related. The results demonstrate that, with appropriate frequency planning flexibility in future systems, the proposed relay concept remains technically sound and may be revisited in future mission configurations.
